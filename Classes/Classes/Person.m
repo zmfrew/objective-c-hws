@@ -2,33 +2,20 @@
 
 @implementation Person
 
+@synthesize name = _name; // Xcode does this by default, but it is necessary to write custom getters and setters.
+
 - (void)printGreeting {
     NSLog(@"Hello, %@", self.name);
 }
 
-- (void)printGreetingTo:(NSString*)name atTimeOfDay:(NSString*)time {
-    if ([time isEqualToString:@"morning"]) {
-        NSLog(@"Good morning, %@", name);
-    } else {
-        NSLog(@"Good evening, %@", name);
-    }
+- (NSString*)name {
+    NSLog(@"Reading name!");
+    return _name;
 }
 
-- (NSDictionary*)fetchGreetingTo:(NSString*)name atTimeOfDay:(NSString*)time {
-    if ([time isEqualToString:@"morning"]) {
-        return @{
-            @"English": [NSString stringWithFormat:@"Good morning, %@", name],
-            @"French": [NSString stringWithFormat:@"Bonjour, %@", name]
-        };
-    } else {
-        return @{
-            @"English": [NSString stringWithFormat:@"Good evening, %@", name],
-            @"French": [NSString stringWithFormat:@"Bonsoir, %@", name]
-        };
-    }
+- (void)setName:(NSString *)newName {
+    NSLog(@"Writing name!");
+    _name = newName;
 }
 
-+ (void)genericGreeting {
-    NSLog(@"Greetings, earthlings.");
-}
 @end
