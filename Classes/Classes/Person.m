@@ -8,8 +8,15 @@
 
 @synthesize name = _name; // Xcode does this by default, but it is necessary to write custom getters and setters.
 
+- (instancetype)initWithName:(NSString*)name {
+    if (self = [super init]) {
+        self.name = name;
+    }
+    
+    return self;
+}
+
 - (void)printGreeting {
-    self.name = @"Kim";
     NSLog(@"Hello, %@", self.name);
 }
 
