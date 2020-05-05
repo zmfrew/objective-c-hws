@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5730008F2461FA2C004DA60F /* NSString+Trimming.m in Sources */ = {isa = PBXBuildFile; fileRef = 5730008E2461FA2C004DA60F /* NSString+Trimming.m */; };
 		57E9EFAF245C9A7E00A15D96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E9EFAE245C9A7E00A15D96 /* main.m */; };
 		57E9EFB7245C9B7100A15D96 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E9EFB6245C9B7100A15D96 /* Person.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5730008D2461FA2C004DA60F /* NSString+Trimming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Trimming.h"; sourceTree = "<group>"; };
+		5730008E2461FA2C004DA60F /* NSString+Trimming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trimming.m"; sourceTree = "<group>"; };
 		57E9EFAB245C9A7E00A15D96 /* Classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Classes; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E9EFAE245C9A7E00A15D96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57E9EFB5245C9B7100A15D96 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 			children = (
 				57E9EFB5245C9B7100A15D96 /* Person.h */,
 				57E9EFB6245C9B7100A15D96 /* Person.m */,
+				5730008D2461FA2C004DA60F /* NSString+Trimming.h */,
+				5730008E2461FA2C004DA60F /* NSString+Trimming.m */,
 				57E9EFAE245C9A7E00A15D96 /* main.m */,
 			);
 			path = Classes;
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E9EFB7245C9B7100A15D96 /* Person.m in Sources */,
+				5730008F2461FA2C004DA60F /* NSString+Trimming.m in Sources */,
 				57E9EFAF245C9A7E00A15D96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
