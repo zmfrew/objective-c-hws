@@ -4,7 +4,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Person *person = [[Person alloc] initWithName:@"Zach"];
-        [person printGreeting];
+        NSString *greeting = [person fetchGreetingForTime:@"morning"];
+        NSLog(@"%@", greeting);
     }
     return 0;
 }

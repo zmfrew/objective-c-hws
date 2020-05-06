@@ -3,8 +3,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
+@property NSString *name;
 - (instancetype)initWithName:(NSString*)name;
-- (void)printGreeting;
+- (NSString*)fetchGreetingForTime:(NSString*)time;
 @end
 
 NS_ASSUME_NONNULL_END
